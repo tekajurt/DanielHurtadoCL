@@ -8,17 +8,28 @@ import {TbHeartHandshake,TbShieldCheck,TbChartDots3,TbPeace,TbHourglass, TbTool,
 import Sections from "./componens/section";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Head from "next/head";
 const home = () => {
     useEffect(() => {
         AOS.init();
       }, [])
     return (
         <Template >
+            <Head>
+                <title>Cencotel EIRL</title>
+                <meta name="description" content="Cencotel es una empresa dedicada a la televigilancia y la entrega de soluciones de seguridad" />
+                <meta charset="UTF-8" />
+                <meta name="keywords"
+                    content="HTML, CSS, JavaScript, NextJS, React, Pagina, web, informatica, soluciones, construir, crear" />
+                <meta name="author"
+                    content="Cencotel EIRL" />
+
+            </Head>
             <Sections id="home" className={styles.home + " d-flex flex-column align-items-center justify-content-center bg-hero"}>
                 <Row>
                     <Col data-aos="fade-right" className="d-flex ">
                         <div className="text-center d-flex flex-column align-self-center mx-auto roll-in-blurred-left">
-                            <h1>Bienvenidos a</h1>
+                            <h2>Bienvenidos a</h2>
                             <h1 className="text-primary">Cencotel</h1>
                             <Link 
                                 className={'btn btn-primary rounded'}
