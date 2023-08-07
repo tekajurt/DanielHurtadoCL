@@ -1,0 +1,114 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+.imagen{
+  max-width: 200px;
+
+}
+
+.bg-hero {
+  background-image: url('../public/hero-bg.jpg');
+}
+.logo {
+  width: 30px;
+}
+
+.borde {
+  border: 1px solid red;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#__next {
+  background-color: rgb(7, 42, 8);
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  margin-bottom: 30px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; 
+  margin-bottom: 30px;
+
+
+  
+}
+
+.containerPage {
+  background-color: rgb(255, 255, 255);
+  flex-grow: 1;
+  flex: 1;
+  height: 100%; /* 60px es el tamaño del navbar y 80px es el tamaño del footer */
+  min-width: 100%;
+  width: 100%;
+  
+
+}
+
+.sidebar {
+  /* estilos de la barra lateral */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+
+  }
+}
