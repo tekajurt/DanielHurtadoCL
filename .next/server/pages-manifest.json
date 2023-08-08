@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/componens/card": "pages/componens/card.html",
+  "/_error": "pages/_error.js",
+  "/componens/footer": "pages/componens/footer.html",
+  "/componens/modal": "pages/componens/modal.html",
+  "/componens/nav": "pages/componens/nav.html",
+  "/componens/section": "pages/componens/section.html",
+  "/componens/sidebar": "pages/componens/sidebar.html",
+  "/componens/template": "pages/componens/template.html",
+  "/home": "pages/home.html",
+  "/": "pages/index.html",
+  "/404": "pages/404.html"
+}
