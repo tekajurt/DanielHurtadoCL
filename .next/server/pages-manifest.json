@@ -1,8 +1,8 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/componens/card": "pages/componens/card.html",
+  "/_error": "pages/_error.js",
   "/componens/footer": "pages/componens/footer.html",
   "/componens/modal": "pages/componens/modal.html",
   "/componens/nav": "pages/componens/nav.html",
