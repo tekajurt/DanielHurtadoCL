@@ -1,11 +1,13 @@
 .home {
-  background-color: transparent;
-  width: 100%;
-  height: 60vh;
-  margin-top: 3rem;
+ 
+  
 }
 .logoHome {
   max-height: 500px;
   height: auto;
   display: none;
+}
+.cliente {
+  background-color: gray;
+  
 }

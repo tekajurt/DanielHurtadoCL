@@ -1,8 +1,24 @@
 .sidebar {
-    background-color: azure;
-    position: fixed;
-    right: 5%;
-    bottom: 10%;
+  background-color: azure;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 111;
   
+
+  
+}
+.link{
+  display: flex;
+  align-items: center;
+}
+.link:hover{
+  background-color: rgb(63, 106, 185);
+  color: white;
+  scale: 1.1;
+}
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
   }
-  
+}

@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react'
-import { Fade } from 'react-bootstrap'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react'
+import styles from "../../styles/Section.module.css";
 function section({id,className,children}) {
-    useEffect(() => {
-        AOS.init();
-      }, [])
-  return (
+  
+      
+      
+      return (
     
-    <section data-aos="fade-up" id={id} className={className} >
+    <section  id={id} className={className+ " "+ styles.section} >
         {children}
     </section>
 
