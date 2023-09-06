@@ -1,0 +1,21 @@
+/* Estilo del contenedor principal */
+.containerPage {
+  
+  }
+  
+  /* Estilo del sidebar fijo */
+  .sidebarContainer {
+    position: fixed; /* Fija el sidebar en su lugar */
+    top: 0; /* Fija el sidebar en la parte superior de la pantalla */
+    bottom: 0; /* Fija el sidebar en la parte inferior de la pantalla */
+    left: 0; /* Fija el sidebar en el lado izquierdo */
+    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido es largo */
+    /* Agrega otros estilos según tus necesidades */
+  }
+  
+  /* Estilo del contenido principal */
+  .mainContainer {
+    flex-grow: 1; /* El contenido principal ocupa el espacio restante */
+    /* Agrega otros estilos según tus necesidades */
+  }
+  

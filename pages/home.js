@@ -1,51 +1,39 @@
 import React, { useEffect, useState } from "react";
-import { Button, Col, Container, Image, Row } from "react-bootstrap";
+import { Button, Col, Container, NavLink, Row } from "react-bootstrap";
 import Carta from "./componens/card"
-import Template from "./componens/template"
-import { Link } from "react-scroll";
+import Image from "next/image";
+import Template from "./componens/template/template"
 import styles from '../styles/Home.module.css';
 import {TbHeartHandshake,TbShieldCheck,TbChartDots3,TbPeace,TbHourglass, TbTool, TbEngine, TbHeartRateMonitor, TbCheckbox,TbMailFast,TbPhoneCall} from "react-icons/tb"
 import Sections from "./componens/section";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Head from "next/head";
+
 const home = () => {
-    useEffect(() => {
-        AOS.init();
-      }, [])
+    
+   
+      
+      
     return (
         <Template >
-            <Head>
-                <title>Cencotel EIRL</title>
-                <meta name="description" content="Cencotel es una empresa dedicada a la televigilancia y la entrega de soluciones de seguridad" />
-                <meta charset="UTF-8" />
-                <meta name="keywords"
-                    content="HTML, CSS, JavaScript, NextJS, React, Pagina, web, informatica, soluciones, construir, crear" />
-                <meta name="author"
-                    content="Cencotel EIRL" />
-
-            </Head>
-            <Sections id="home" className={styles.home + " d-flex flex-column align-items-center justify-content-center bg-hero"}>
-                <Row>
-                    <Col data-aos="fade-right" className="d-flex ">
+            <Sections id="home" className={styles.home + " bg-pasto d-flex flex-column align-items-center justify-content-center"}>
+                <Row className=" align-items-center justify-content-between">
+                    <Col className="">
                         <div className="text-center d-flex flex-column align-self-center mx-auto roll-in-blurred-left">
-                            <h2>Bienvenidos a</h2>
+                            <h1>Bienvenidos a</h1>
                             <h1 className="text-primary">Cencotel</h1>
-                            <Link 
+                            <NavLink 
                                 className={'btn btn-primary rounded'}
-                                to='contacto'
-                                smooth={true}
-                            >Contactanos</Link>
+                                href='#contacto'
+                                >Contactanos</NavLink>
                         </div>
-                    </Col>
-                    <Col data-aos="fade-left">
-                        <Image className="roll-in-blurred-right" fluid src="/acreditado.png"/>
+                    </Col >
+                    <Col className="position-relative">
+                        <Image width={500} height={500} className="roll-in-blurred-right w-100 " src="/acreditado.png" alt="Acreditado por el OS10"/>
                     </Col>
                 </Row>
             </Sections>
             
             
-            <Sections id="proyectos" className={"m-5 w-100 p-5 d-flex flex-column rounded bg-light puff-in-center"}>
+            <Sections id="proyectos" className={"d-flex flex-column"}>
                 <h1 className="text-center">Proyectos</h1>
                 <Row className="mt-5">
                     <Col>
@@ -55,7 +43,7 @@ const home = () => {
                             contenido=""
                             tituloModal="Confianza"
                             descripcionModal="Cencotel es un aliado poderoso para disminuir sus riesgos en seguridad para que usted descanse tranquilo."
-                        />
+                            />
                     </Col>
                     <Col>
                         <Carta 
@@ -64,7 +52,7 @@ const home = () => {
                             contenido={""}
                             tituloModal="Seguridad"
                             descripcionModal="Las cámaras son vigiladas por personal capacitado que actúa con la preocupación de cuidar su empresa"
-                        />
+                            />
                     </Col>
                     <Col>
                         <Carta 
@@ -73,15 +61,15 @@ const home = () => {
                             contenido={""}
                             tituloModal="Trayectoria"
                             descripcionModal="Cencotel es una empresa con amplia trayectoria en la seguridad y la televigilancia a su disposición para asesorarle y brindarle el mejor servicio. Para todos sus problemas de seguridad, Cencotel tiene una propuesta."
-                        />
+                            />
                     </Col>
                 </Row>
             </Sections>
-            <Sections id="nosotros" className={" m-5 d-flex flex-column rounded puff-in-center"}>
+            <Sections id="nosotros" className={"d-flex flex-column bg-pasto puff-in-center"}>
                 <h1 className="text-center">Nosotros</h1>
-                <Row className="mt-5">
-                    <Col xs="12" md="6">
-                        <Image fluid src="/about.jpg" />
+                <Row className="mt-5 m-auto">
+                    <Col xs="12" md="6" className="d-flex position-relative align-items-center justify-content-center">
+                        <Image fill={true}  className="" src="/about.jpg" alt="Dos personas sentadas trabajando en una mesa blanca"/>
                     </Col>
                     <Col className="d-flex flex-column">
                        <h2 className="text-center mt-5">¿Como lo hacemos?</h2> 
@@ -111,7 +99,7 @@ const home = () => {
                     </Col>
                 </Row>
             </Sections>
-            <Sections id="servicios" className={"m-5 w-100 p-5 d-flex flex-column rounded bg-light"}>
+            <Sections id="servicios" className={"d-flex flex-column  bg-light"}>
                 <h1 className="text-center">Servicios</h1>
                 <h5 className="text-center">Ofrecemos una variedad de servicios para su tranquilidad y seguridad</h5>
                 <Row className="mt-5">
@@ -121,7 +109,7 @@ const home = () => {
                             titulo={"Instalación"}
                             contenido={"Instalación de sistemas de seguridad y vigilancia que sean recomendadas por nosotros o las suyas propias"}
                             ocultar={true}
-                        />
+                            />
                     </Col>
                     <Col>
                         <Carta
@@ -129,7 +117,7 @@ const home = () => {
                             titulo={"Mantención"}
                             contenido={"Servicio de mantención mensual para el optimo cuidado de los equipos"}
                             ocultar={true}
-                        />
+                            />
                     </Col>
                     <Col>
                         <Carta
@@ -137,7 +125,7 @@ const home = () => {
                             titulo={"Monitoreo"}
                             contenido={"Servicio de televigilancia de cámaras, alarmas, etc."}
                             ocultar={true}
-                        />
+                            />
                     </Col>
                     <Col>
                         <Carta
@@ -145,24 +133,23 @@ const home = () => {
                             titulo={"Control"}
                             contenido={"Control de accesos y presencia, manejo de sistemas de seguridad, entre otros"}
                             ocultar={true}
-                        />
+                            />
                     </Col>
                 </Row>
             </Sections>
 
-            <Sections id="clientes" className={" m-5 d-flex flex-column rounded"}>
+            <Sections id="clientes" className={" d-flex flex-column bg-pasto "}>
             <h1 className="text-center">Clientes</h1>
                 <h5 className="text-center">Algunos de los clientes que decidieron dejar en nuestras manos su seguridad</h5>
-                <Row className="mt-5 ">
-                    <Col className="d-flex align-items-center justify-content-center bg-primary d-flex align-items-center border border-dark"><Image className="imagen" src="/clientes/cliente-1.png"/></Col>
-                    <Col className="d-flex align-items-center justify-content-center bg-primary d-flex align-items-center border border-dark"><Image className="imagen" src="/clientes/cliente-2.png"/></Col>
-                    <Col className="d-flex align-items-center justify-content-center bg-primary d-flex align-items-center border border-dark"><Image className="imagen" src="/clientes/cliente-3.png"/></Col>
-                    <Col className="d-flex align-items-center justify-content-center bg-primary d-flex align-items-center border border-dark"><Image className="imagen" src="/clientes/cliente-4.png"/></Col>
-                    <Col className="d-flex align-items-center justify-content-center bg-primary d-flex align-items-center border border-dark"><Image className="imagen" src="/clientes/cliente-5.png"/></Col>
-                    <Col className="d-flex align-items-center justify-content-center bg-primary text-light text-center d-flex align-items-center border border-dark"><h1>Condominio Puerto Montt</h1></Col>
+                <Row className="mt-5 " >
+                    <Col className={styles.cliente+" position-relative d-flex align-items-center justify-content-center d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-1.png" alt="Plasticos Austral"/></Col>
+                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-2.png" alt="Conaf"/></Col>
+                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-3.png" alt="Alumplast"/></Col>
+                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-4.png" alt="Servimar"/></Col>
+                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  text-light text-center d-flex align-items-center border border-dark"}><h1>Condominio Puerto Montt</h1></Col>
                 </Row>
             </Sections>
-            <Sections id="precios" className={"m-5 w-100 p-5 d-flex flex-column rounded bg-light"}>
+            <Sections id="precios" className={"d-flex flex-column  bg-light"}>
                 <h1 className="text-center">Precios</h1>
                 <Row className="mt-5">
                     <Col>
@@ -177,14 +164,14 @@ const home = () => {
                                 </div>
                             }
                             ocultar={true}
-                        />
+                            />
                     </Col> 
                     <Col>
                         <Carta
                             header={<h5>Plan Hogar</h5>}
                             titulo={<h2>$100.000</h2>}
                             contenido={
-                            <div>
+                                <div>
                                 <h5>/mes + iva</h5>
                                 <p>Instalación: $200.000 + iva</p>
                                 <p>2 cámara IP</p>
@@ -209,7 +196,7 @@ const home = () => {
                     </Col>
                 </Row>
             </Sections>
-            <Sections id="contacto" className={" m-5 d-flex flex-column rounded"}>
+            <Sections id="contacto" className={" d-flex flex-column bg-pasto"}>
                 <h1 className="text-center">Contáctanos</h1>
                 <h5 className="text-center">Cualquier duda, pregunta o simplemente un saludo, contáctenos y responderemos a la brevedad</h5>
                 <Row className="my-5">
@@ -219,7 +206,7 @@ const home = () => {
                             titulo={"Mandanos un mensaje"}
                             contenido={"roberto@cencotel.cl"}
                             ocultar= {true}
-                        />
+                            />
                     </Col>
                     <Col>
                         <Carta
@@ -227,7 +214,7 @@ const home = () => {
                             titulo={"o llámanos"}
                             contenido={"+56977582734"}
                             ocultar= {true}
-                        />
+                            />
                     </Col>
                 </Row>
             </Sections>

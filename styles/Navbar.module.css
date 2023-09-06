@@ -1,10 +1,14 @@
 .navbar{
   background-color: rgb(255, 255, 255);
- 
+  top: 0;
+  right: 0;
+  left:0 ;
+  width: 100%;
 }
 .scrollDown{
   animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   position: fixed!important; 
+  top: 0;
   width: 100%;
 }
 .scrollUp{
@@ -35,7 +39,10 @@
     opacity: 1;
   }
 }
-
+.link{
+  display: flex;
+  align-items: center;
+}
 .link:hover{
   background-color: rgb(63, 106, 185);
   color: white;
