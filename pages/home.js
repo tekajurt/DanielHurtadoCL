@@ -16,17 +16,17 @@ const home = () => {
         <Template >
             <Sections id="home" className={styles.home + " bg-pasto d-flex flex-column align-items-center justify-content-center"}>
                 <Row className=" align-items-center justify-content-between">
-                    <Col className="">
+                    <Col md={6}>
                         <div className="text-center d-flex flex-column align-self-center mx-auto roll-in-blurred-left">
                             <h1>Bienvenidos a</h1>
                             <h1 className="text-primary">Cencotel</h1>
                             <NavLink 
-                                className={'btn btn-primary rounded'}
+                                className={'btn btn-primary text-light rounded'}
                                 href='#contacto'
                                 >Contactanos</NavLink>
                         </div>
                     </Col >
-                    <Col className="position-relative">
+                    <Col md={6} className="position-relative">
                         <Image width={500} height={500} className="roll-in-blurred-right w-100 " src="/acreditado.png" alt="Acreditado por el OS10"/>
                     </Col>
                 </Row>
@@ -67,7 +67,7 @@ const home = () => {
             </Sections>
             <Sections id="nosotros" className={"d-flex flex-column bg-pasto puff-in-center"}>
                 <h1 className="text-center">Nosotros</h1>
-                <Row className="mt-5 m-auto">
+                <Row className={styles.fondoTexto+" mt-5 m-auto rounded"}>
                     <Col xs="12" md="6" className="d-flex position-relative align-items-center justify-content-center">
                         <Image fill={true}  className="" src="/about.jpg" alt="Dos personas sentadas trabajando en una mesa blanca"/>
                     </Col>
@@ -140,13 +140,23 @@ const home = () => {
 
             <Sections id="clientes" className={" d-flex flex-column bg-pasto "}>
             <h1 className="text-center">Clientes</h1>
+                <Row className={styles.fondoTexto+" mt-5 rounded"} >
                 <h5 className="text-center">Algunos de los clientes que decidieron dejar en nuestras manos su seguridad</h5>
-                <Row className="mt-5 " >
-                    <Col className={styles.cliente+" position-relative d-flex align-items-center justify-content-center d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-1.png" alt="Plasticos Austral"/></Col>
-                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-2.png" alt="Conaf"/></Col>
-                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-3.png" alt="Alumplast"/></Col>
-                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  d-flex align-items-center border border-dark"}><Image fill className="imagen" src="/clientes/cliente-4.png" alt="Servimar"/></Col>
-                    <Col className={styles.cliente+" position-relative  d-flex align-items-center justify-content-center  text-light text-center d-flex align-items-center border border-dark"}><h1>Condominio Puerto Montt</h1></Col>
+                    <Col className={styles.cliente+" "}>
+                        <img className={styles.imagenServimar} src="/clientes/cliente-4.png" alt="Servimar"/>
+                    </Col>
+                    <Col className={styles.cliente+" "}>
+                        <img className={styles.imagen} src="/clientes/cliente-2.png" alt="Conaf"/>
+                    </Col>
+                    <Col className={styles.cliente+" "}>
+                        <img className={styles.imagen} src="/clientes/cliente-1.jpeg" alt="Plasticos Austral"/>
+                    </Col>
+                    <Col className={styles.cliente+" "}>
+                        <img className={styles.imagen} src="/clientes/cliente-3.png" alt="Alumplast"/>
+                    </Col>
+                    <Col className={styles.cliente+" "}>
+                        <h1 className={styles.imagenCPMontt}>Condominio Puerto Montt</h1>
+                    </Col>
                 </Row>
             </Sections>
             <Sections id="precios" className={"d-flex flex-column  bg-light"}>
@@ -198,8 +208,8 @@ const home = () => {
             </Sections>
             <Sections id="contacto" className={" d-flex flex-column bg-pasto"}>
                 <h1 className="text-center">Contáctanos</h1>
+                <Row className={styles.fondoTexto+" my-5 rounded p-5"}>
                 <h5 className="text-center">Cualquier duda, pregunta o simplemente un saludo, contáctenos y responderemos a la brevedad</h5>
-                <Row className="my-5">
                     <Col>
                         <Carta
                             header={<h1><TbMailFast /></h1>}

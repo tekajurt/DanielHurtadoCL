@@ -6,7 +6,7 @@ function section({id,className,children}) {
       
       return (
     
-    <section  id={id} className={className+ " "+ styles.section} >
+    <section  id={id} className={className+ " p-5 "+ styles.section} >
         {children}
     </section>
 

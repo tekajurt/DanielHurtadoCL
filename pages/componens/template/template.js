@@ -24,7 +24,9 @@ const Template = (({ children,_sidebar, _navbar, _footer }) => {
   if(_footer!=undefined){
     footer = _footer;
   }
-    
+  
+      
+
     useEffect(() => {
       const documentHeight = () => {
         const doc = document.documentElement

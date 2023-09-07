@@ -6,12 +6,23 @@ import Navbar from 'react-bootstrap/Navbar';
 import styles from "/styles/Navbar.module.css"
 import NextLink from 'next/link';
 import { useContext, useEffect, useState } from 'react';
-import { UserContext } from '../../_app';
 const navBar = () =>{
-  const {carrito,setCarrito} = useContext(UserContext);
+  const [stickyClass, setStickyClass] = useState('position-relative');
+  useEffect(() => {
+    window.addEventListener('scroll', stickNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', stickNavbar);
+    };
+  }, []);
   
 
-    
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 0 ? setStickyClass('position-fixed ') : setStickyClass('position-relative');
+    }
+  };
 
  
       return (
@@ -20,7 +31,8 @@ const navBar = () =>{
               className={
                 
                   styles.navbar 
-                  +" align-items-center"
+                  +" align-items-center "
+                  +stickyClass
                 
                 } expand="md">
               <Container>

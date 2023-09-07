@@ -5,23 +5,16 @@
 }
 html, body, #__next {
 
-
+width: 100vw;
   
 }
 
 html {
   scroll-behavior: smooth;
 }
-.imagen{
-  max-width: 200px;
 
-}
 .logo {
   width: 30px;
-}
-
-.borde {
-  border: 1px solid red;
 }
 
 .text-justify {
@@ -54,6 +47,7 @@ html {
   background: url("/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
   
 }
 
