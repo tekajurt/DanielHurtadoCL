@@ -2,6 +2,14 @@
  
   
 }
+.icono{
+  width: 50px;
+  height: 50px;
+}
+.imagenAbout{
+  width: auto;
+  height: auto;
+}
 .botonFlotante{
   position: fixed;
   bottom: 20px;

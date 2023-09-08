@@ -37,17 +37,17 @@ const navBar = () =>{
                 } expand="md">
               <Container>
                 <NavbarToggle aria-controls='basic-navbar-nav' />
-                <NavbarBrand href="/"><img className="logo" src="/favicon.ico"></img></NavbarBrand>
+                <NavbarBrand href="/" title='Back'><img className="logo" src="/favicon.ico" alt='favicon' title='favicon'></img></NavbarBrand>
                 <div className='text-dark'></div>
                 <Navbar.Collapse className=""  id='basic-navbar-nav'>
                   <Nav className=' justify-content-center text-dark bg-lightgreen'>
-                    <Nav.Link className={styles.link + " rounded"} href="#home">Home</Nav.Link>
-                    <Nav.Link className={styles.link + " rounded"} href="#proyectos">Proyectos</Nav.Link>
-                    <Nav.Link className={styles.link + " rounded"} href="#nosotros">Nosotros</Nav.Link>                 
-                    <Nav.Link className={styles.link + " rounded"} href="#servicios">Servicios</Nav.Link>
-                    <Nav.Link className={styles.link + " rounded"} href="#clientes">Clientes</Nav.Link>
-                    <Nav.Link className={styles.link + " rounded"} href="#precios">Precios</Nav.Link>
-                    <Nav.Link className={styles.link + " rounded"} href="#contacto">Contactanos</Nav.Link>                  
+                    <Nav.Link className={styles.link + " rounded"} href="#home" title='Home'>Home</Nav.Link>
+                    <Nav.Link className={styles.link + " rounded"} href="#proyectos" title='Proyectos'>Proyectos</Nav.Link>
+                    <Nav.Link className={styles.link + " rounded"} href="#nosotros" title='Nosotros'>Nosotros</Nav.Link>                 
+                    <Nav.Link className={styles.link + " rounded"} href="#servicios" title='Servicios'>Servicios</Nav.Link>
+                    <Nav.Link className={styles.link + " rounded"} href="#clientes" title='Clientes'>Clientes</Nav.Link>
+                    <Nav.Link className={styles.link + " rounded"} href="#precios" title='Precios'>Precios</Nav.Link>
+                    <Nav.Link className={styles.link + " rounded"} href="#contacto" title='Contacto'>Contactanos</Nav.Link>                  
                   </Nav>
                 </Navbar.Collapse>
               </Container>
