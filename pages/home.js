@@ -4,7 +4,7 @@ import Carta from "./componens/card"
 import Image from "next/image";
 import Template from "./componens/template/template"
 import styles from '../styles/Home.module.css';
-import {TbHeartHandshake,TbShieldCheck,TbChartDots3,TbPeace,TbHourglass, TbTool, TbEngine, TbHeartRateMonitor, TbCheckbox,TbMailFast,TbPhoneCall} from "react-icons/tb"
+import {TbArrowBigUpLine,TbBrandWhatsapp, TbHeartHandshake,TbShieldCheck,TbChartDots3,TbPeace,TbHourglass, TbTool, TbEngine, TbHeartRateMonitor, TbCheckbox,TbMailFast,TbPhoneCall} from "react-icons/tb"
 import Sections from "./componens/section";
 
 const home = () => {
@@ -14,6 +14,8 @@ const home = () => {
       
     return (
         <Template >
+            <Button className={styles.botonFlotante + " btn btn-primary rounded-circle"} href="#home"><TbArrowBigUpLine/></Button>
+            <Button className={styles.botonWhatsapp + " btn btn-success rounded-circle"} href="https://wa.me/message/HSTFQYH4HZBKP1"><TbBrandWhatsapp/></Button>
             <Sections id="home" className={styles.home + " bg-pasto d-flex flex-column align-items-center justify-content-center"}>
                 <Row className=" align-items-center justify-content-between">
                     <Col md={6}>
