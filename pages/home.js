@@ -102,7 +102,7 @@ const home = () => {
             </Sections>
             <Sections id="servicios" className={"d-flex flex-column  bg-light"}>
                 <h2 className="text-center">Servicios</h2>
-                <h3 className="text-center">Ofrecemos una variedad de servicios para su tranquilidad y seguridad</h3>
+                <h3 className="text-center">Ofrecemos desde monitoreo de cámaras de seguridad hasta instalación de sistemas de seguridad y vigilancia </h3>
                 <Row className="mt-5">
                     <Col>
                         <Carta
