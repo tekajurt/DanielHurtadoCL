@@ -22,6 +22,7 @@ export default function App({
               <link name="publisher" href="https://new.cencotel.cl/" />
               <meta name="author" content="Cencotel EIRL" />
               <meta name="language" content="es" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           </Helmet>      
           <Component {...pageProps} />
       </UserContext.Provider>
