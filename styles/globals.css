@@ -3,9 +3,11 @@
   --sidebarwidth: 100%
 
 }
+.main{
+  width: 100%;
+}
 html, body, #__next {
 
-width: 100vw;
   
 }
 

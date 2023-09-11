@@ -78,17 +78,17 @@ const home = () => {
                        <div className="d-flex flex-column align-items-center mt-5 ms-5">
 
                         <Row>
-                            <Col className="" xs="2">
+                            <Col className="" md="2">
                                 <TbPeace className={styles.icono}/>
                             </Col>
-                            <Col xs="10">
+                            <Col md="10">
                                 <h4>Tranquilidad</h4>
                                 <p>Cencotel es un aliado poderoso para disminuir sus riesgos en seguridad para que usted descanse tranquilo.</p>
                             </Col>
-                            <Col className="" xs="2">
+                            <Col className="" md="2">
                                 <TbHourglass className={styles.icono}/>
                             </Col>
-                            <Col xs="10">
+                            <Col md="10">
                                 <h4>Experiencia</h4>
                                 <p>Cencotel es un aliado poderoso para disminuir sus riesgos en seguridad para que usted descanse tranquilo.</p>
                             </Col>
@@ -139,24 +139,24 @@ const home = () => {
                 </Row>
             </Sections>
 
-            <Sections id="clientes" className={" d-flex flex-column bg-pasto "}>
+            <Sections id="clientes" className={" bg-pasto "}>
             <h2 className="text-center">Clientes</h2>
-                <Row className={styles.fondoTexto+" mt-5 rounded"} >
                 <h3 className="text-center">Algunos de los clientes que decidieron dejar en nuestras manos su seguridad</h3>
-                    <Col className={styles.cliente+" "}>
-                        <img className={styles.imagenServimar} src="/clientes/cliente-4.png" alt="Servimar" title="Servimar"/>
+                <Row className={styles.fondoClientes+" mt-5 rounded"} >
+                    <Col md={12} xl={4} className={styles.cliente+" "}>
+                        <img className={styles.imagen} src="/clientes/cliente-4.png" alt="Servimar" title="Servimar"/>
                     </Col>
-                    <Col className={styles.cliente+" "}>
+                    <Col md={12} xl={4} className={styles.cliente+" "}>
                         <img className={styles.imagen} src="/clientes/cliente-2.png" alt="Conaf" title="Conaf"/>
                     </Col>
-                    <Col className={styles.cliente+" "}>
+                    <Col md={12} xl={4} className={styles.cliente+" "}>
                         <img className={styles.imagen} src="/clientes/cliente-1.jpeg" alt="Plasticos Austral" title="Plasticos Austral"/>
                     </Col>
-                    <Col className={styles.cliente+" "}>
+                    <Col md={12} xl={4} className={styles.cliente+" "}>
                         <img className={styles.imagen} src="/clientes/cliente-3.png" alt="Alumplast" title="Alumplast"/>
                     </Col>
-                    <Col className={styles.cliente+" "}>
-                        <h4 className={styles.imagenCPMontt}>Condominio Puerto Montt</h4>
+                    <Col md={12} xl={4} className={styles.cliente+" "}>
+                        <h4>Condominio Puerto Montt</h4>
                     </Col>
                 </Row>
             </Sections>

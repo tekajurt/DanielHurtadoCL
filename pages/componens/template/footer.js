@@ -5,7 +5,7 @@ const Footer = (() => {
   return (
 
     <footer id="footer" className={styles.footer + " text-between d-flex mx-2"}>
-      <Row className="w-100">
+      <Row className="">
         <Col>
           <p className=""><BsWhatsapp /> +56977582734</p>
         </Col>

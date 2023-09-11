@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import { useState,useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "../../../styles/Template.module.css"
+import { Row,Col } from "react-bootstrap";
 
 const Template = (({ children,_sidebar, _navbar, _footer }) => {
   //define currentSection para obtener la seccion actual
@@ -70,14 +71,13 @@ const Template = (({ children,_sidebar, _navbar, _footer }) => {
       
   return(
       <div className="main">
-        {navbar?<Navbar path={path}/>:""}
-        <div className={styles.containerPage+ " text-dark d-flex"}>
-          
-          <div className={styles.mainContainer +" "}>
-            {children}
-          </div>
-        </div>
-        {footer?<Footer/>:""}
+        <Row className="m-0 flex-column">
+          <Col>{navbar?<Navbar path={path}/>:""}</Col>
+            <Col className={styles.mainContainer +" p-0"}>
+              {children}
+            </Col>
+          <Col>{footer?<Footer/>:""}</Col>
+        </Row>
       </div>
   );
 });
