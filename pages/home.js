@@ -68,11 +68,11 @@ const home = () => {
             </Sections>
             <Sections id="nosotros" className={"d-flex flex-column bg-pasto puff-in-center"}>
                 <h2 className="text-center">Nosotros</h2>
-                <Row className={styles.fondoTexto+" mt-5 m-auto rounded"}>
+                <Row className={styles.fondoClientes+" mt-5 m-auto rounded"}>
                     <Col xs="12" md="6" className="d-flex position-relative align-items-center justify-content-center d-none d-md-flex">
                         <img className={styles.imagenAbout+ " "} src="/about.jpg" alt="Dos personas sentadas trabajando en una mesa blanca" title="Nosotros"/>
                     </Col>
-                    <Col className="d-flex flex-column">
+                    <Col className="d-flex flex-column ">
                        <h3 className="text-center mt-5">¿Como lo hacemos?</h3> 
                         <p className="mt-5 ms-5">Nos dedicamos a el monitoreo de cámaras y alarmas, además de sistemas de altoparlante con el fin de expulsar al intruso, además de hacer recomendaciones sobre posibles vulnerabilidades</p>
                        <div className="d-flex flex-column align-items-center mt-5 ms-5">
@@ -141,8 +141,8 @@ const home = () => {
 
             <Sections id="clientes" className={" bg-pasto "}>
             <h2 className="text-center">Clientes</h2>
-                <h3 className="text-center">Algunos de los clientes que decidieron dejar en nuestras manos su seguridad</h3>
                 <Row className={styles.fondoClientes+" mt-5 rounded"} >
+                <h3 className="text-center">Algunos de los clientes que decidieron dejar en nuestras manos su seguridad</h3>
                     <Col md={12} xl={4} className={styles.cliente+" "}>
                         <img className={styles.imagen} src="/clientes/cliente-4.png" alt="Servimar" title="Servimar"/>
                     </Col>
@@ -209,7 +209,7 @@ const home = () => {
             </Sections>
             <Sections id="contacto" className={" d-flex flex-column bg-pasto"}>
                 <h2 className="text-center">Contáctanos</h2>
-                <Row className={styles.fondoTexto+" my-5 rounded p-5"}>
+                <Row className={styles.fondoClientes+" my-5 rounded p-5"}>
                 <h3 className="text-center mb-5">Cualquier duda, pregunta o simplemente un saludo, contáctenos y responderemos a la brevedad</h3>
                     <Col>
                         <Carta

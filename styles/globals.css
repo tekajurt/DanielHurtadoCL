@@ -6,10 +6,6 @@
 .main{
   width: 100%;
 }
-html, body, #__next {
-
-  
-}
 
 html {
   scroll-behavior: smooth;
